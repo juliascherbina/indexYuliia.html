@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./indexYulia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Ballet dancer</h1>
+        <ul class="navlink">
+            <li><a class="navlink-list" href="">Home</a></li>
+            <li> <a onclick=" loadPage('./aboutMe.html')" class="navlink-list" href="#">About me</a></li>
+            <li><a onclick=" loadPage('./photo-video.html')" class="navlink-list" href="#">Photo/Video</a></li>
+            <li><a onclick=" loadPage('./contacts.html')" class="navlink-list" href="#"> Contacts</a></li>
+
+        </ul>
+    </header>
+    <main id="main-container">
+        <div class="img">
+            <img class="img-1" src="./IMG_20220811_191351_677.jpg" alt="ballet">
+            <img class="img-2" src="./IMG_20220811_191358_252.jpg" alt="ballet">
+            <img class="img-3" src="./IMG_20220811_191517_337.jpg" alt="ballet">
+        </div>
+
+    </main>
+</body>
+<script>
+    function loadPage(page) {
+        $('#main-container').load(page);
+
+    }
+</script>
+
+
+</html>
